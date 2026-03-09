@@ -37,14 +37,6 @@ railway up
 
 ---
 
-## 🌍 Deploy Live (Free) — Glitch.com
-
-1. Go to https://glitch.com → New Project → Import from GitHub
-2. Paste your repo URL
-3. Glitch auto-deploys and gives you a live URL
-
----
-
 ## 📦 Features
 
 - ✅ Real-time text transfer (any device, any network)
