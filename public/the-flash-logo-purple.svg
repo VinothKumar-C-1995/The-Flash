@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" width="260" height="60">
+  <defs>
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C084FC"/>
+      <stop offset="40%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#6C47FF"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F0A1E"/>
+      <stop offset="100%" style="stop-color:#080612"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E9D5FF"/>
+      <stop offset="30%" style="stop-color:#C084FC"/>
+      <stop offset="70%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#6C47FF"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#6C47FF"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C084FC"/>
+      <stop offset="50%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#6C47FF"/>
+    </linearGradient>
+    <filter id="boltGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feColorMatrix type="matrix" 
+        values="0.5 0 0.8 0 0.2   0 0 0.5 0 0   0.8 0 1 0 0.5   0 0 0 1 0" 
+        in="blur" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="textGlow" x="-10%" y="-40%" width="120%" height="180%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feColorMatrix type="matrix"
+        values="0.5 0 0.8 0 0.1   0 0 0.5 0 0   0.8 0 1 0 0.3   0 0 0 0.7 0"
+        in="blur" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="outerGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix type="matrix"
+        values="0.3 0 0.6 0 0.1   0 0 0.4 0 0   0.6 0 0.9 0 0.3   0 0 0 0.4 0"
+        in="blur" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer glow wrapper -->
+  <g filter="url(#outerGlow)">
+    <!-- Background -->
+    <rect width="260" height="60" rx="10" fill="url(#bgGrad)"/>
+  </g>
+
+  <!-- Background -->
+  <rect width="260" height="60" rx="10" fill="url(#bgGrad)"/>
+
+  <!-- Subtle purple inner glow bg -->
+  <rect width="260" height="60" rx="10" fill="#6C47FF" opacity="0.04"/>
+
+  <!-- Gradient border -->
+  <rect width="260" height="60" rx="10" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Left accent bar gradient -->
+  <rect x="0" y="8" width="3.5" height="44" rx="2" fill="url(#accentBar)"/>
+
+  <!-- Bolt background glow circles -->
+  <circle cx="35" cy="30" r="24" fill="#6C47FF" opacity="0.12"/>
+  <circle cx="35" cy="30" r="17" fill="#8B5CF6" opacity="0.1"/>
+  <circle cx="35" cy="30" r="10" fill="#A78BFA" opacity="0.08"/>
+
+  <!-- Lightning bolt -->
+  <g filter="url(#boltGlow)">
+    <!-- Shadow/depth layer -->
+    <polygon points="40,8 24,32 35,32 32,52 48,28 37,28"
+      fill="#4C1D95" opacity="0.6"/>
+    <!-- Main bolt body -->
+    <polygon points="38,7 22,31 33,31 30,51 46,27 35,27"
+      fill="url(#boltGrad)"/>
+    <!-- Inner highlight -->
+    <polygon points="35,10 27,27 32,27 30,36 39,22 34,22"
+      fill="#E9D5FF" opacity="0.45"/>
+    <!-- Top highlight streak -->
+    <polygon points="34,10 28,22 31,22"
+      fill="#FFFFFF" opacity="0.3"/>
+  </g>
+
+  <!-- THE text -->
+  <text
+    x="72" y="23"
+    font-family="'Arial Black', Arial, sans-serif"
+    font-size="9.5"
+    font-weight="900"
+    fill="#A78BFA"
+    letter-spacing="5"
+    opacity="0.9"
+  >THE</text>
+
+  <!-- FLASH main text -->
+  <text
+    x="69" y="49"
+    font-family="'Arial Black', Arial, sans-serif"
+    font-size="27"
+    font-weight="900"
+    fill="url(#textGrad)"
+    letter-spacing="2"
+    filter="url(#textGlow)"
+  >FLASH</text>
+
+  <!-- Speed lines -->
+  <g opacity="0.3">
+    <line x1="222" y1="20" x2="254" y2="20" stroke="url(#borderGrad)" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="230" y1="30" x2="254" y2="30" stroke="url(#borderGrad)" stroke-width="1" stroke-linecap="round"/>
+    <line x1="236" y1="40" x2="254" y2="40" stroke="url(#borderGrad)" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Small bolt accent bottom right -->
+  <g opacity="0.35" transform="translate(239,36) scale(0.32)">
+    <polygon points="10,0 2,14 7,14 5,26 13,12 8,12" fill="#A78BFA"/>
+  </g>
+
+  <!-- Bottom tagline -->
+  <text
+    x="72" y="58"
+    font-family="Arial, sans-serif"
+    font-size="6.5"
+    fill="#6C47FF"
+    letter-spacing="1.5"
+    opacity="0.7"
+  >vinothkumar.online</text>
+</svg>
