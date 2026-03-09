@@ -229,5 +229,5 @@ MIT License — free to use and modify.
 
 ## 👤 Author
 
-**Vinoth Kumar**
-[vinothkumar.online](https://vinothkumar.online)
+**Vinoth Kumar C**
+https://www.linkedin.com/in/c-vinoth-kumar/
