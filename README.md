@@ -74,6 +74,7 @@ npm install
 node server.js
 
 # 4. Open in browser
+npm run dev 
 # http://localhost:3000
 ```
 
