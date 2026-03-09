@@ -1,4 +1,4 @@
-# ⚡ AirMind — Real-Time File & Text Transfer
+# ⚡ The Flash — Real-Time File & Text Transfer
 
 > Share files and text instantly between any devices — no app download, no account needed.
 
