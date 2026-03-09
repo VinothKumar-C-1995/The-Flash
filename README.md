@@ -1,4 +1,4 @@
-# ⚡ AirMind — Real-Time File & Text Transfer
+# ⚡ The Flash — Real-Time File & Text Transfer
 
 > Share files and text instantly between any devices — no app download, no account needed.
 
@@ -74,6 +74,7 @@ npm install
 node server.js
 
 # 4. Open in browser
+npm run dev 
 # http://localhost:3000
 ```
 
